@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+    <body class="bg-blue-900 h-screen flex justify-center items-center">
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+            <h2 class="text-3xl font-bold text-black text-center mb-6">Crear Cuenta</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-black mb-2">Nombre Completo</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-black mb-2">Correo Electrónico</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Ingresa tu correo">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-black mb-2">Contraseña</label>
+                    <input type="password" id="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Crea una contraseña">
+                </div>
+                <div class="mb-6">
+                    <label for="confirm_password" class="block text-black mb-2">Confirma tu Contraseña</label>
+                    <input type="password" id="confirm_password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Repite tu contraseña">
+                </div>
+                <button type="submit" class="w-full bg-blue-400 text-white py-2 rounded-lg hover:bg-red-400 transition duration-300">Registrarse</button>
+            </form>
+            <div class="text-center mt-6">
+                <p class="text-black">¿Ya tienes una cuenta? <a href="http://127.0.0.1:5500/inicio.html?" class="text-blue-500 hover:text-blue-700">Inicia sesión aquí</a></p>
+            </div>
+        </div>
+</body>
+</html>

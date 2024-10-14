@@ -3,81 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="password.css">
-    <title>My proyect</title>
+    <title>BookBurst</title>
 </head>
+    <script src="https://cdn.tailwindcss.com"></script>
 <style>
-    *{
-        margin:0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-weight: bold;
     }
-
+    h1{
+        color: cadetblue;
+        font-size: 35px;
+    }
+    ul li{
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    a{
+        color: cadetblue;
+        text-decoration: none;
+    }
+    a:hover{
+        color: darkcyan;
+    }
     
 </style>
-<body style="color: darkcyan;">
-
-    <header class="body">
-        <nav class="barra">
+    <header>
+        <nav>
             <h1 class="logo"><img src="https://img.icons8.com/?size=100&id=23663&format=png&color=000000" alt="" width="50px">BOOKBURST</h1>
-            
             <ul>
                 <li><a href="">Configuración</a></li>
-                <li><a href="">Registro</a></li>
+                <li><a href="http://127.0.0.1:5500/registro.html">Registro</a></li>
+                <li><a href="http://127.0.0.1:5500/inicio.html">Inicio</a></li>
                 <li><a href="">Libros</a></li>
-                <li><a href="">Biblioteca</a></li>
             <ul>
         </nav>
-        <div class="container">
-            <input type="text" placeholder="Buscar...">
-            <button class="can"><i class="icons8-búsqueda-50.png"></i></button>
-        </div>
     </header>
+<body style="background-color: lightskyblue;">
+    <script src="index.js"></script>
+    <!--Barra de navegación-->
+    <div class="w-full max-w-lg">
+        
+        <form action="#"  class="flex items-center">
 
-    <div class="portadas" style="display: flex;">
-        <div style="text-align: center;">
-            <img src="https://i.pinimg.com/236x/50/df/22/50df22650b08ab0796ea74bc3bbf3469.jpg" alt="" width="100pxpx"> <h1 class="información">Desde muy pequeña, Maya se ha sacrificado en cuerpo y alma por el ballet.</h1> 
-            <button widtth="5px" >Más...</button> </div>
-        <div>
-            <img src="https://i.pinimg.com/236x/22/fd/25/22fd25dddb9acdf6a828ee27f184f250.jpg" alt="" width="100px"><h1 class="more">El libro de la conmovedora película con Cole Sprouse y Haley Lu Richardson.</h1>
-            <button width="100px">Más...</button>
-        </div>
-        <div>
-            <img src="https://i.pinimg.com/564x/7e/21/a7/7e21a7972917e3993d7b17763da314c1.jpg" alt="" width="100px"><h1 class="idk">Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley.</h1>
-            <button width="100px">Más...</button>
-        </div>
-        <div>
-        <img src="https://i.pinimg.com/564x/37/2b/f8/372bf81d81cd5f870919ef7434824a2a.jpg" alt="" width="100px"> <h1 class="innesesary">Los elfos vienen por dos motivos: por la guerra y para encontrar esposa. Y en los dos casos, traen consigo la muerte</h1>
-        <button width="100px">Más...</button>
-        </div>
-        <div>
-        <img src="https://i.pinimg.com/236x/f8/58/a5/f858a54750f1f4490f8190e22144d099.jpg" alt="" width="100px"><h1 class="cry">Una historia de amor fascinante sobre una mujer que, inesperadamente, se ve obligada a elegir entre su marido, a quien daba por fallecido, y el prometido que años después le ha devuelto la ilusión por vivir.</h1>
-        <button width="110px">Más...</button>
-        </div>
-        <div>
-        <img src="https://i.pinimg.com/564x/75/fa/85/75fa852e19641a2046217b538fc144d1.jpg" alt="" width="100px"> <h1 class="princess">Fábula mítica y relato filosófico que interroga acerca de la relación del ser humano con su prójimo y con el mundo.</h1>
-        <button width="100px">Más...</button>
-        </div>
-        <div>
-        <img src="https://i.pinimg.com/236x/f5/b5/ff/f5b5ffdffe1c004f8665c1272ba8f1a2.jpg" alt="" width="100px"><h1 class="win">Bienvenido a El cruce de Caronte. El té está caliente, los bollos recién hechos y los muertos de paso.</h1>
-        <button width="100px">Más...</button>
-        </div>
-        <div>
-        <img src="https://i.pinimg.com/236x/20/1d/9f/201d9f277404cdcbd7915b63454f8ce9.jpg" alt="" width="100px"><h1 class="seven">Maeve no sabe mucho sobre sí misma. Solo que no deja de pensar en si su madre cumplió todos sus sueños antes de morir...</h1>
-        <button width="100px">Más...</button>
-        </div>
-        <div>
-        <img src="https://i.pinimg.com/474x/9a/ec/bf/9aecbf930a64bdb39880d381cdf98eff.jpg" alt="" width="100px">
-        </div>
-        <div>
-        <img src="https://i.pinimg.com/236x/4e/f8/de/4ef8deaddb0a393dd927c69ddd818d28.jpg" alt="" width="100px">
-        </div>
-        <img src="https://i.pinimg.com/236x/c8/66/a7/c866a7986d7cc52dde7c51b544d816f4.jpg" alt="" width="100px">
-        <img src="https://i.pinimg.com/236x/87/ce/32/87ce329e43c8fdb8cad20807bdd22f5b.jpg" alt="" width="100px">
+        <input type="text" name="Buscar" placeholder="Buscar libros..." class="w-full p-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+        <button type="submit" class="bg-lightblue-500 text-white p-3 rounded-r-lg hover:bg-black focus:outline-none focus:ring-2 focus:ring-lightblue-400 focus:ring-opacity-50"
+        > Buscar...</button>
+    </form>
     </div>
 
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-4">Libros Disponibles</h1>
         
+        <!-- Lista de libros -->
+        <ul id="bookList" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <li class="book-item p-4 border border-blue-400 rounded-lg flex flex-col items-center">
+                <a href="http://127.0.0.1:5500/Harry.html">
+                <img src="https://i.pinimg.com/564x/6f/c1/04/6fc104d0517f5d34656cf7c10072fe10.jpg" alt="Harry Potter" class="h-48 mb-4">
+                <div class="text-center">Harry Potter y la piedra filosofal - J.K. Rowling</div>
+                </a>
+            </li>
+            <li class="book-item p-4 border border-blue-400 rounded-lg flex flex-col items-center">
+                <img src="https://i.pinimg.com/control/236x/50/df/22/50df22650b08ab0796ea74bc3bbf3469.jpg" alt="Estrellas" class="h-48 mb-2">
+                <div class="text-center">Cuando no quedan más estrellas que contar - María Martínez</div>
+            </li>
+            <li class="book-item p-4 border border-blue-400 rounded-lg flex flex-col items-center">
+                <img src="https://i.pinimg.com/control/236x/f5/b5/ff/f5b5ffdffe1c004f8665c1272ba8f1a2.jpg" alt="" class="h-48 mb-2">
+                <div class="text-center">Bajo la puerta de los susurros - TJ Klune</div>
+            </li>
+            <li class="book-item p-4 border border-blue-400 rounded-lg flex flex-col items-center">
+                <img src="https://i.pinimg.com/236x/75/fa/85/75fa852e19641a2046217b538fc144d1.jpg" alt="" class="h-48 mb-2">
+                <div class="text-center">El Principito - Antoine De Saint-Exupéry</div>
+            </li>
+            <li class="book-item p-4 border border-blue-400 rounded-lg flex flex-col items-center">
+                <img src="https://i.pinimg.com/control/236x/a1/21/a1/a121a13aa014d4c4b44ddc1e286119f3.jpg" alt="" class="h-48 mb-2">
+                <div class="text-center">Un cuento perfecto - Elísabet Benavet</div>
+            </li>
+            <li class="book-item p-4 border border-blue-400 rounded-lg flex flex-col items-center">
+                <img src="https://i.pinimg.com/control/236x/3b/09/2e/3b092ef6d61881dee65d798d8aeff106.jpg" alt="" class="h-48 mb-2">
+                <div class="text-center">Fabricantes de lágrimas - Erin Doom</div>
+            </li>
+            <li class="book-item p-4 border border-blue-400 rounded-lg flex flex-col items-center">
+                <img src="https://i.pinimg.com/236x/63/a1/b6/63a1b6d30892e238e710170f6b80c2e6.jpg" alt="" class="h-48 mb-2">
+                <div class="text-center">Orgullo y Prejuicio -  Jane Austen</div>
+            </li>
+            <li class="book-item p-4 border border-blue-400 rounded-lg flex flex-col items-center">
+                <img src="https://i.pinimg.com/236x/6e/3e/a5/6e3ea55db8a7fd666333826810650311.jpg" alt="" class="h-48 mb-2">
+                <div class="text-center">Érase una vez un corazón roto - Stephanie Garber</div>
+            </li>
+            <li class="book-item p-4 border border-blue-400 rounded-lg flex flex-col items-center">
+                <img src="https://i.pinimg.com/236x/aa/d2/bf/aad2bf7e7178097ad0e722c6a0955041.jpg" alt="" class="h-48 mb-2">
+                <div class="text-center">Alicia en el país de las maravillas - Lewis Carrol</div>
+            </li>
+            <li class="book-item p-4 border border-blue-400 rounded-lg flex flex-col items-center">
+                <img src="https://i.pinimg.com/564x/fc/a9/4b/fca94b6cc29ff1a9c772be89c76043df.jpg" alt="" class="h-48 mb-2">
+                <div class="text-center">Ciudades de Papel - John Green</div>
+            </li>
+            <li class="book-item p-4 border border-blue-400 rounded-lg flex flex-col items-center">
+                <img src="https://i.pinimg.com/236x/5b/a7/9a/5ba79a3cc11996edaf7d3da17b3b4056.jpg" alt="" class="h-48 mb-2">
+                <div class="text-center">Alicia a través del espejo - Lewis Carrol </div>
+            </li>
+            <li class="book-item p-4 border border-blue-400 rounded-lg flex flex-col items-center">
+                <img src="https://i.pinimg.com/236x/ad/45/7e/ad457e8d4c5ca3ca24a91c4502f01af4.jpg" alt="" class="h-48 mb-2">
+                <div class="text-center">La librería del Señor Livingstone - Mónica Gutiérrez</div>
+            </li>
+        </ul>
+    </div>
+
 </body>
 </html>
